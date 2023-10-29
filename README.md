@@ -36,9 +36,9 @@ GET: /:user
     
 The nodejs and mongodb images can be created using the docker files provided.  
   
-docker-compose-up can be used to bring the complete backend up and can be accessed using the port 5000  
+**docker-compose-up** can be used to bring the complete backend up and can be accessed using the **port 5000 **    
 The nodejs.env file contains the port number the NodeJS server is listening on.  
-The mongo.env file contains the IP and port number of the mongoDB container used to connect with our server.  
+The mongo.env file contains the IP and port number of the mongoDB container used to connect with our server.    
 The mongoDB IP used is the default IP and port of the mongoDB container in a Docker environment, can be replaced with the container name in NodeJS code.  
 
 If you are using minikube then it can be accessed on localhost:5000  
