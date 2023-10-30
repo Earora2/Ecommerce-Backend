@@ -41,4 +41,11 @@ The nodejs.env file contains the port number the NodeJS server is listening on.
 The mongo.env file contains the IP and port number of the mongoDB container used to connect with our server.    
 The mongoDB IP used is the default IP and port of the mongoDB container in a Docker environment, can be replaced with the container name in NodeJS code.  
 
-If you are using minikube then it can be accessed on localhost:5000  
+If you are using **minikube**  
+minikube start --driver=<any-driver>  #I have user Docker  
+kubectl apply -f mongodb-service.yaml -f mongodb-pv.yaml -f mongodb-pvc.yaml -f mongo-deployment.yaml  
+kubectl apply -f nodejs-service.yaml -f nodejs-deployment.yaml  
+minikube service nodjs-service  
+
+The link provided by nodjs-service should open the following page:  
+![image](https://github.com/Earora2/Ecommerce-Backend/assets/53661538/e0a23633-6952-4f00-8139-45f0542607f2)
