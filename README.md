@@ -1,4 +1,4 @@
-# Ecommerce-Backend---Copy
+# Ecommerce-Backend
 This API serves as the backbone for managing users, products, orders, carts, and categories. Below is an overview of the available models, routes, and controllers.  
 ****Models****    
 **User Model**  
